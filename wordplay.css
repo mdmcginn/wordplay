@@ -1,0 +1,150 @@
+    html {
+      font-family: system-ui, sans-serif;
+      font-size: 18px;
+    }
+	#triviaJSON {
+		display: none;
+	}
+    article {
+      display: block;
+    }
+    header h1 {
+      font-family: system-ui, sans-serif;
+      font-size: 3rem;
+      color: #8B138B;
+      margin: .5rem 0;
+      letter-spacing: -3px;
+    }
+    header h1 span {
+      font-size: 2.3rem;
+      color: #000000;
+    }
+	header h1.slim {
+    font-family: system-ui, sans-serif;
+    font-size: 1.7rem;
+    color: #8B138B;
+    margin: .5rem 0;
+    letter-spacing: -2px;
+	}
+	 header h1.slim span {
+      font-size: 1.3rem;
+      color: #000000;
+    }
+    h1 {
+      font-size: 1.1em;
+    }
+	img {
+	   max-width: 100%;
+	}
+    button {
+	  border: thin solid #8c8c8c;;
+      margin: .5rem;
+      font-size: 1.3rem;
+      display: inline;
+      text-align: left;
+	  max-width: 45%;
+	}
+    button#next {
+      display: inline-block;
+      margin-top: 1rem;
+      border: thick solid #8B138B;
+      color: #FFFFFF;
+      background-color: #8B138B;
+      font-weight: bold;
+    }
+    button#skip {
+      font-size: 1rem;
+      display: none;
+    }
+    button:focus, button:hover {
+      border: thin solid black;
+      outline: medium solid #FFFACD;
+	  box-shadow:0 0 10px 8px #FFFACD;
+    }
+    button#next:focus, button#next:hover {
+      outline: thin solid #FFFACD;
+	  box-shadow:0 0 7px 3px  #FFFACD;
+    }
+	button.c:active{
+      outline: thin solid green;
+	  box-shadow:5px 5px 10px 2px green;
+    }
+	button.a:active,
+	button.b:active,
+	button.d:active,
+	button.e:active,
+	button.f:active
+	{
+      outline: thin solid red;
+	  box-shadow:2px 2px 6px 1px red;
+    }
+    p {
+      margin: 0;
+    }
+	p#intro {
+	  font-size: 1rem;
+	}
+	p#intro span {
+	  font-size: .9rem;
+	}
+    #result {
+      font-family: serif;
+	  font-size: 1rem;
+	  font-weight: bold;
+	  float: right;
+	  border: thin black solid;
+	  padding: .5rem;
+	  display: inline;
+	  margin-left: 1rem;
+    }
+	#check p {
+      margin-top: -3%;
+    }
+    section {
+      display: block;
+    }	
+	.c0 {
+	  color: red;
+	}
+	.c10 {
+	  color: green;
+	}
+	.c10 img {
+	max-width: 20%;
+	}
+    footer a:link {
+      text-decoration: none;
+      color: #550055;
+    }
+    footer a:visited {
+      color: #6F096F;
+    }
+    footer a:focus, footer a:hover {
+      border-bottom: 1px solid;
+    }
+    footer a:active {
+      color: #AC4FAC;
+      color: #962F96;
+    }
+    @media only screen and (max-width: 480px) {
+      header h1 {
+        margin: .7rem 0;
+        font-size: 2rem;
+        margin: .5rem 0;
+        letter-spacing: -2px;
+      }
+      header h1 span {
+        font-size: 1.65rem;
+      }
+	  #check p {
+		margin-top: -10%;
+	  }
+	  button {
+		max-width: 45%;
+	  }
+    }
+    @media only screen and (max-width:350px) {
+	  button {
+		max-width: 100%;
+	  }
+	}

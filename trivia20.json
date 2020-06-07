@@ -1,0 +1,62 @@
+[
+	{
+	"questionNumber": 21,
+	"question": "T20: Who was King David's general and nephew?", 
+	"choices": ["Joab","Abishag", "Bildad","Nabal"],
+	"next": 22
+	},
+	{
+	"questionNumber": 22,
+    "question": "20: What was the birthplace of Joel McGinnis? ",
+	"choices": ["Texas","Iowa","Wisconsin","Illinois"],
+	"next": 23
+	},
+	{
+	"questionNumber": 23,
+	"question": "Who was Prime Minister of the United Kingdom during World War II?", 
+	"choices": ["David Cameron", "Gordon Brown", "Winston Churchill", "Tony Blair"],
+	"next": 24
+	},
+	{
+	"questionNumber": 24,
+    "question": "Which general was killed in the 1775 Battle of Quebec? ",
+	"choices": ["Richard Montgomery","Lord Montcalm","Henri de Guise","Louis Riel"],
+	"next": 25
+	},
+	 {
+	"questionNumber": 25,
+    "question": "Which general was killed in the 1775 Battle of Quebec? ",
+	"choices": ["Richard Montgomery","Lord Montcalm","Henri de Guise","Louis Riel"],
+	"next": 26
+	},
+	{
+	"questionNumber": 26,
+	"question": "Who was Prime Minister of the United Kingdom during World War II?", 
+	"choices": ["Winston Churchill", "David Cameron", "Gordon Brown",  "Tony Blair"],
+	"next": 27
+	},
+		{
+	"questionNumber": 27,
+	"question": "Who was Prime Minister of the United Kingdom during World War II?", 
+	"choices": ["David Cameron", "Gordon Brown", "Winston Churchill", "Tony Blair"],
+	"next": 28
+	},
+		{
+	"questionNumber": 28,
+	"question": "By passing the 1933 Enabling Act, the German Reichstag gave dictatorial powers to", 
+	"choices": ["Adolph Hitler", "Alger Hiss", "Paul von Hindenburg", "Otto von Bismarck"],
+	"next": 29
+	},
+  {
+	"questionNumber": 29,
+    "question": "20: Where was French artist Paul Gauguin buried? ",
+	"choices": ["Marquesas Islands ","Channel Islands","Île de la Cité, France","Grosse Ile, Michigan"],
+	"next": 30
+	}
+		{
+	"questionNumber": 30,
+	"question": "Patrick Henry's 1775 speech 'Give me liberty or give me death' urged Virginians to", 
+	"choices": ["join the American Revolution", "confirm their loyalty to King George III", "send money to French orphans", "stand up for the rights of Native Americans"],
+	"next": 31
+	}
+]

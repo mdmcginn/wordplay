@@ -1,0 +1,14 @@
+[
+	{
+	"questionNumber": 5,
+	"question": "Who was King David's general and nephew?", 
+	"choices": ["Joab","Abishag", "Bildad","Nabal"],
+	"next": 6
+	},
+    {
+	"questionNumber": 6,
+    "question": "Who was the prophet Elijah's successor?",
+	"choices": ["Elisha","Ahab","Malachi","John the Baptist"],
+	"next": 8
+	}
+]

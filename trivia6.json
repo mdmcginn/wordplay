@@ -1,0 +1,20 @@
+[
+		{
+	"questionNumber": 28,
+	"question": "By passing the 1933 Enabling Act, the German Reichstag gave dictatorial powers to", 
+	"choices": ["Adolph Hitler", "Alger Hiss", "Paul von Hindenburg", "Otto von Bismarck"],
+	"next": 29
+	},
+  {
+	"questionNumber": 29,
+    "question": "Where was French artist Paul Gauguin buried? ",
+	"choices": ["Marquesas Islands ","Channel Islands","Île de la Cité, France","Grosse Ile, Michigan"],
+	"next": 30
+	},
+		{
+	"questionNumber": 30,
+	"question": "Patrick Henry's 1775 speech 'Give me liberty or give me death' urged Virginians to", 
+	"choices": ["join the American Revolution", "confirm their loyalty to King George III", "send money to French orphans", "stand up for the rights of Native Americans"],
+	"next": 31
+	}
+]

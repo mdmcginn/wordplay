@@ -1,0 +1,56 @@
+	[{
+		"questionNumber": 1,
+		"question": "When was the United States Declaration of Independence signed?",
+		"fact" : "The first battle of the American Revolution was April 18, 1775",
+		"choices": ["1776", "1774", "1777", "1775"],
+		"next": 2
+	},
+	{
+		"questionNumber": 2,
+		"question": "Which building was set afire on August 24, 1812?",
+		"choices": ["The White House", "Parliament Building", "the Reichstag", "Palace of the Nation"],
+		"next": 3
+	},
+	{
+		"questionNumber": 3,
+		"question": "Which king was killed at the Battle of Bosworth Field in 1485? ",
+		"choices": ["Richard III", "Edward V", "Henry VIII", "James I"],
+		"next": 4
+	},
+	{
+		"questionNumber": 4,
+		"question": "In which year was Constantinople conquered by the Turks?",
+		"choices": ["1453", "1792", "1914", "1286"],
+		"next": 5
+	},
+	{
+		"questionNumber": 5,
+		"question": "Where is Grant's Tomb?",
+		"choices": ["New York City", "Savannah", "St. Louis", "Paducah"],
+		"next": 6
+	},
+	{
+		"questionNumber": 7,
+		"question": "In the year 1900, what were the most popular baby names in the United States?",
+		"choices": ["John and Mary", "Joseph and Catherine", "William and Elizabeth", "George and Anne"],
+		"next": 8
+	},
+	{
+		"questionNumber": 8,
+		"question": "During the Spanish Civil War of 1936, Francisco Franco fought for which political faction?",
+		"choices": ["Nationalist Spain", "Republican Spain", "Popular Front", "Papal State"],
+		"next": 9
+	},
+	{
+		"questionNumber": 9,
+		"question": "On what day did the United States declare war on Japan, entering World War II?",
+		"choices": ["December 8, 1941", "June 6, 1944", "June 22, 1941", "September 1, 1939"],
+		"next": 10
+	},
+	{
+		"questionNumber": 10,
+		"question": "When was the fax machine invented?",
+		"choices": ["1843", "1924", "1964", "1948"],
+		"next": 11
+	}
+]

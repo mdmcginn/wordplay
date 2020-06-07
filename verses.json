@@ -1,0 +1,39 @@
+{"verses": [
+
+            {
+        "-id": "NASB",
+        "label": "NASB",
+        "text": "The first account I composed, Theophilus, about all that Jesus began to do and teach,"
+      },
+      {
+        "-id": "LEB",
+        "label": "LEB",
+        "text": "﻿I produced the former account, O Theophilus, about all that Jesus began to do and to teach,"
+      },
+      {
+        "-id": "WEB",
+        "label": "WEB",
+        "text": "The first book I wrote, Theophilus, concerned all that Jesus began both to do and to teach,"
+      },
+      {
+        "-id": "NKJV",
+        "label": "NKJV",
+        "text": "The former account I made, O Theophilus, of all that Jesus began both to do and teach,"
+      },
+      {
+        "-id": "NIV",
+        "label": "NIV",
+        "text": "In my former book, Theophilus, I wrote about all that Jesus began to do and to teach"
+      },
+      {
+        "-id": "NLT",
+        "label": "NLT",
+        "text": "Dear Theophilus: In my first book I told you about everything Jesus began to do and teach"
+      },
+      {
+        "-id": "BBE",
+        "label": "BBE",
+        "text": "I have given an earlier account, O Theophilus, of all the things which Jesus did, and of his teaching from the first,"
+    }
+	]
+	}

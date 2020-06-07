@@ -1,0 +1,20 @@
+[
+	{
+	"questionNumber": 15,
+	"question":"In the year 1900, what were the most popular baby names in the United States?",
+	"choices":["John and Mary","Joseph and Catherine","William and Elizabeth","George and Anne"],
+	"next": 16
+	},
+    {
+	"questionNumber": 16,
+	"question":"For which political faction did Francisco Franco fight during the Spanish Civil War?",
+	"choices":["Nationalists","Republicans","Popular Front","Papal State"],
+	"next": 17
+	},
+	{
+	"questionNumber": 17,
+	"question":"When did the United States enter World War II?",
+	"choices":["December 8, 1941","June 6, 1944","June 22, 1941","September 1, 1939"],
+	"next": 18
+	}
+  ]

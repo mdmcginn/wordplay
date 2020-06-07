@@ -1,0 +1,20 @@
+[
+	{
+	"questionNumber": 15,
+	"question":"Who copied these sentences into his Latin exercise book as a boy: 'No man understands me... What will become of me.... I know not what to do.'?",
+	"choices":["Isaac Newton","George III","Lord Chesterfield","Jean-Jacques Rousseau"],
+	"next": 16
+	},
+    {
+	"questionNumber": 16,
+	"question":"Isaac Newton's mother expected him to become a",
+	"choices":["sheep farmer","alchemist","engraver","theologian"],
+	"next": 17
+	},
+	{
+	"questionNumber": 17,
+	"question":"Babe Ruth hit 714 home runs in his career. How many times did he strike out?",
+	"choices":["1,330","286","521","715"],
+	"next": 18
+	}
+  ]

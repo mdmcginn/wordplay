@@ -1,0 +1,92 @@
+    body {
+      font-family: system-ui, sans-serif;
+      font-size: 18px;
+    }
+    article {
+      display: block;
+    }
+    header h1 {
+      font-family: system-ui, sans-serif;
+      font-size: 3rem;
+      color: #8B138B;
+      margin: .5rem 0;
+      letter-spacing: -3px;
+    }
+    header h1 span {
+      font-size: 2.3rem;
+      color: #000000;
+    }
+    h1 {
+      font-size: 1.1em;
+    }
+    button {
+      margin: .5rem;
+      font-size: 1.3rem;
+      display: inline;
+      text-align: left;
+    }
+    button#next {
+      display: inline-block;
+      margin-top: 1rem;
+      border: thick solid #8B138B;
+      color: #FFFFFF;
+      background-color: #8B138B;
+      font-weight: bold;
+    }
+    button#skip {
+      font-size: 1rem;
+      display: none;
+    }
+    button:focus, button:hover {
+      //border: medium solid #FFFACD;
+      outline: thick solid #FFFACD;
+    }
+    button#next:focus, button#next:hover {
+      outline: thick solid #FFFACD;
+    }
+    p {
+      margin: 0;
+    }
+    #result {
+      font-family: serif;
+    }
+	#check p {
+      margin-top: -3%;
+    }
+    section {
+      display: block;
+    }	
+	.c0 {
+	  color: red;
+	}
+	.c10 {
+	  color: green;
+	}
+    footer a:link {
+      text-decoration: none;
+      color: #550055;
+    }
+    footer a:visited {
+      color: #6F096F;
+    }
+    footer a:focus, footer a:hover {
+      border-bottom: 1px solid;
+    }
+    footer a:active {
+      color: #AC4FAC;
+      color: #962F96;
+    }
+    @media only screen and (max-width: 480px) {
+      header h1 {
+        margin: .7rem 0;
+        font-size: 2rem;
+        margin: .5rem 0;
+        letter-spacing: -2px;
+      }
+      header h1 span {
+        font-size: 1.65rem;
+      }
+	  #check p {
+		margin-top: -10%;
+	  }
+    }

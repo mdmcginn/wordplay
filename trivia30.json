@@ -1,0 +1,32 @@
+[
+	{
+	"questionNumber": 10,
+	"question":"The mother of Sir Winston Churchhill was born in",
+	"choices":["Brooklyn","Dublin","Canterbury","Durban"],
+	"next": 11
+	},
+    {
+	"questionNumber": 11,
+	"question":"The birthplace of Mustafa Kemal Ataturk, the father of modern Turkey, was",
+	"choices":["Thessalonica","Istanbul","Tashkent","Izmir"],
+	"next": 12
+	},
+	{
+	"questionNumber": 12,
+	"question":"The birthplace of Catherine the Great, the Empress of Russia, was",
+	"choices":["Poland","Russia","Ukraine","Bosnia"],
+	"next": 13
+	},
+	{
+	"questionNumber": 13,
+	"question":"Marie Antoinette, the last Queen of France, was born in",
+	"choices":["Vienna","Paris","Avignon","Geneva"],
+	"next": 14
+	},
+	{
+	"questionNumber": 14,
+	"question":"The birthplace of Adolf Hitler, the Nazi dictator of Germany, was",
+	"choices":["Austria","Switzerland","Germany","Serbia"],
+	"next": 15
+	}
+  ]

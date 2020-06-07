@@ -1,0 +1,27 @@
+{ "results": [
+            {
+        "question": "How are things in Glockamorra?",
+        "correct_answer": "~Just fine.",
+        "incorrect_answers": 
+		[ "Not so good.","Peachy.","So-so"]
+      },
+                {
+        "question": "How are things in the hood?",
+        "correct_answer": "~Just fine.",
+        "incorrect_answers": 
+		[ "Fine.","Nifty.","Cool"]
+      },
+	              {
+        "question": "How are things in Tara?",
+        "correct_answer": "~Just fine.",
+        "incorrect_answers": 
+		[ "Soyle Boyle","Great.","Okay"]
+      },
+	              {
+        "question": "How are things in Barcelona?",
+        "correct_answer": "~Marvelous.",
+        "incorrect_answers": 
+		[ "Ma ma wu wu","Rad.","Adequate."]
+      }
+	]
+	}

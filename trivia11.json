@@ -1,0 +1,22 @@
+[
+	{
+	"questionNumber": 10,
+	"question":"Where was the birthplace of King James I of England?",
+	"choices":["Scotland","Ireland","England","Spain"],
+	"additionalColorfulDetails" : "First he was King James VI of Scotland, then King of England and Ireland.",
+	"next": 11
+	},
+    {
+	"questionNumber": 11,
+	"question":"One of the chief developers of the theory of the divine right of kings was",
+	"choices":["King James I","Thomas Paine","Thomas Jefferson","John Locke"],
+	"next": 12
+	},
+	{
+	"questionNumber": 12,
+	"question":"The native language of British novelist Joseph Conrad was",
+	"choices":["Polish","English","Persian","Sanskrit"],
+	"additionalColorfulDetails" : "Conrad learned French as a child, and only learned English when he was in his twenties.",
+	"next": 13
+	}
+]

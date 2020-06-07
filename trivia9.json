@@ -1,0 +1,14 @@
+[
+    {
+	"questionNumber": 16,
+	"question":"During the Spanish Civil War, which political faction was supported by Hitler and Mussolini?",
+	"choices":["Fascists","Republicans","Popular Front","Papal State"],
+	"next": 17
+	},
+	{
+	"questionNumber": 17,
+	"question":"On what day did World War I end?",
+	"choices":["November 11, 1918","March 7, 1914","July 12, 1941","October 10, 1939"],
+	"next": 18
+	}
+  ]

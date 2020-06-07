@@ -1,0 +1,14 @@
+[
+	{
+	"questionNumber": 18,
+	"question": "In the book of Ruth, what was Ruth's nationality?", 
+	"choices": ["Moabite","Judean", "Israelite","Canaanite"],
+	"next": 19
+	},
+    {
+	"questionNumber": 19,
+    "question": "Which general was killed in the 1775 Battle of Quebec? ",
+	"choices": ["Richard Montgomery","Lord Montcalm","Henri de Guise","Louis Riel"],
+	"next": 20
+	}
+]

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>TextWork</title>
+    <meta name="description" content="Comparing texts" />
+    <meta name="author" content="Michael McGinnis" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@mdmcginn" />
+    <meta name="twitter:creator" content="@mdmcginn" />
+    <meta name="twitter:image" property="og:image" content="http://www.biographiks.com/mcwrite.jpg" />
+    <meta name="twitter:url" property="og:url" content="http://homecomers.org/" />
+    <meta name="twitter:title" property="og:title" content="TextWork" />
+    <meta name="twitter:description" property="og:description" content="Comparing texts" />
+    <link rel="me" href="mailto:michael@homecomers.org" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="TextWork">
+    <link rel="apple-touch-icon" href="favicon-152x152.png">
+    <meta name="msapplication-TileImage" content="favicon-144x144.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+	<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/manifest.json" />
+    <!--link rel="stylesheet" href="style.css" /-->
+
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        button {
+            margin: .15rem;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        #result {
+            font-family: serif;
+        }
+    </style>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/service-worker.js", {
+                    scope: "/"
+                })
+                .then(function(reg) {
+                    // registration worked
+                    console.log("Registration succeeded. Scope is " + reg.scope);
+                }).catch(function(error) {
+                    // registration failed
+                    console.log("Registration failed with " + error);
+                });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            //	function getText(){
+            var h, p;
+
+            var ajaxRequest = new XMLHttpRequest();
+            ajaxRequest.onreadystatechange = function() {
+
+                if (ajaxRequest.readyState == 4) {
+                    //the request is compared, now check its status
+                    if (ajaxRequest.status == 200) {
+                        //turn JSON into object
+                        var jsonObj = JSON.parse(ajaxRequest.responseText);
+						//console.log(jsonObj.results[0]);
+                        var buttonString = "";
+                        //get random object from array
+                        var messagesArray = jsonObj.results;
+						questionString = getQuestion(messagesArray);
+						//console.log(questionString);
+						buttonString += questionString + "</p>";
+						document.getElementById("main").innerHTML = buttonString;
+                        //console.log(messagesArray);
+                        //var randomIndex = Math.floor(Math.random()*messagesArray.length);
+
+                        //versionString = versionString + messageObj.label;
+                        //use that object to set content
+                        //console.log(versionString);
+                       // document.getElementById("main").innerHTML = buttonString;
+                        //document.getElementById("main").style.color = messageObj.color;
+                    }
+
+                } else {
+                    console.log("Status error: " + ajaxRequest.status);
+                }
+
+            }
+
+  //        ajaxRequest.open("GET", "https://opentdb.com/api.php?amount=10&type=multiple");
+          ajaxRequest.open("GET", "verses.json");
+            ajaxRequest.send();
+        })
+		
+		function getQuestion(messagesArray) {
+				    var buttonString = "";
+					var labelString = "";
+                        for (var p = 0; p < messagesArray.length; ++p) {
+                            //for (var prop in messagesArray) {
+                            quizQuestion = messagesArray[p].text;
+							console.log(quizQuestion);
+                            //console.log(messagesArray[p].label + " " + messageObj);
+
+							//for (h = 0; h < buttons.length; ++h) {
+							// button = buttons[h];
+
+							//}
+                            //	buttonString = messagesArray[p].label + "</p>" + buttonString + "<p>";
+                            if (messagesArray[p].label) {
+                                labelString = "<p id ='" + messagesArray[p].label + "'>" + "<label>" + messagesArray[p].label + "</label>";
+                            }
+							questionString = formQuestion(quizQuestion);
+							buttonString += labelString + questionString;
+							//console.log(buttonString);
+                        }
+						        return buttonString;
+                }
+				
+		function formQuestion(currentQuestion) {
+				            var space = " ";
+							 var buttonString = "";
+		                     buttons = currentQuestion.split(space);
+							//console.log(buttons);
+                           for (h = 0; h < buttons.length; ++h) {
+                                button = buttons[h];
+								//console.log(button);
+                                //buttonString = buttonString + "<br />";
+                                //for (c = 0; c < buttons.length; ++c) {
+                                //button = buttons[c];
+                                //}
+								    buttonString += "<button>" + button + "</button>";
+                            
+                            }
+								//console.log(buttonString);
+                                return buttonString;
+                }
+    </script>
+</head>
+
+<body>
+    <!--body onload="getText()"-->
+    <label><strong>MODIFIED</strong></label>
+    <div id="result"></div>
+    <hr />
+    <div id="main"></div>
+
+    <script>
+        var verseString = "";
+        document.onclick = function(event) {
+            var target = event.target || event.srcElement;
+            if (event.target.nodeName === "BUTTON") {
+                verseString += target.innerHTML + " ";
+                localStorage.setItem("verseString", verseString);
+                document.getElementById("result").innerHTML = localStorage.getItem("verseString");
+                document.cookie = "latest=" + "<v id='" + localStorage.getItem('verseString') + "</v>\r\n";
+            };
+        };
+    </script>
+
+</body>
+
+</html>

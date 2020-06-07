@@ -1,0 +1,32 @@
+[
+	{
+	"questionNumber": 10,
+	"question":"What was the birthplace of Eamon de Valera, the first president of the Irish Republic?",
+	"choices":["New York City","Dublin","Barcelona","Belfast"],
+	"next": 11
+	},
+    {
+	"questionNumber": 11,
+	"question":"What was the birthplace of Mustafa Kemal Ataturk, the father of modern Turkey?",
+	"choices":["Greece","Turkey","Uzbekistan","Persia"],
+	"next": 12
+	},
+	{
+	"questionNumber": 12,
+	"question":"What was the birthplace of Catherine the Great, the Empress of Russia?",
+	"choices":["Poland","Russia","Ukraine","Bosnia"],
+	"next": 13
+	},
+	{
+	"questionNumber": 13,
+	"question":"What was the birthplace of Marie Antoinette, the last Queen of France?",
+	"choices":["Austria","France","Switzerland","Belgium"],
+	"next": 14
+	},
+	{
+	"questionNumber": 14,
+	"question":"What was the birthplace of Adolf Hitler, the Nazi dictator of Germany?",
+	"choices":["Austria","Switzerland","Germany","Serbia"],
+	"next": 15
+	}
+  ]

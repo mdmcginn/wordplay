@@ -1,0 +1,26 @@
+[
+	{
+	"questionNumber": 6,
+	"question":"Comedian Bob Hope was born in",
+	"choices":["London","Cleveland","Palm Springs","New York"],
+	"next": 7
+	},
+    {
+	"questionNumber": 7,
+	"question":"Songwriter Irving Berlin, composer of 'God Bless America,' was born in ",
+	"choices":["Siberia","New York","Berlin","Milwaukee"],
+	"next": 8
+	},
+	{
+	"questionNumber": 8,
+	"question":"Johnny Weissmuller, best known for his Tarzan movies, was born in",
+	"choices":["Hungary","Illinois","California","New York"],
+	"next": 9
+	},
+		{
+	"questionNumber": 8,
+	"question":"Joel McGinnis was born in",
+	"choices":["Texas","Illinois","Wisconsin","Alaska","Hawaii"],
+	"next": 9
+	}
+]
