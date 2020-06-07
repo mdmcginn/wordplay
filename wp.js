@@ -1,8 +1,8 @@
-  window.onload =   runit(); 
+  window.onload =   getQuestions('trivia',0); 
   
-  function runit() {
-  var myList = document.querySelector('main');
-
+function getQuestions(quizType,nextSource) {
+  let currentQuestion = document.querySelector('main');
+    filenm = quizType + nextSource  + ".json";
     fetch('trivia2.json')
     .then(function(response) {
       if (!response.ok) {
@@ -12,18 +12,16 @@
 
     })
     .then(function(questions) {
-				 console.log(questions[1].choices);
-     for(var i = 0; i < questions.length; i++) {
-        var listItem = document.createElement('li');
+     for(let i = 0; i < questions.length; i++) {
+        const listItem = document.createElement('li');
         listItem.innerHTML = '<strong>' + questions[i].question + '</strong>';
         listItem.innerHTML +=' Number: ' + questions[i].questionNumber + '.';
         listItem.innerHTML +=' Next: <strong>' + questions[i].next + '</strong>';
-							  console.log(myList);
-        myList.appendChild(listItem);
+        currentQuestion.appendChild(listItem);
       }
     })
     .catch(function(error) {
-      var p = document.createElement('p');
+      const p = document.createElement('p');
       p.appendChild(
         document.createTextNode('Error: ' + error.message)
       );
