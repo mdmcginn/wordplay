@@ -103,11 +103,11 @@ Array.prototype.push.apply(questions, newQuestions)
            console.log(answers[i]);
 		   let answer;
           if (i === 0) {
-           answer = "<button class='c'>" + question.choices[i] + "<\/button>";
+           answer = "<button class='c' type='button'>" + question.choices[i] + "<\/button>";
 			let checkAnswer = question.choices[i];
 			let checkQuestion = question.question;
           } else {
-            answer = "<button class='" + classes[i] + "'>" + question.choices[i] + "<\/button>";
+            answer = "<button class='" + classes[i] + "' type='button'>" + question.choices[i] + "<\/button>";
           }
           answers.push(answer);
         }
