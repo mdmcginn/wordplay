@@ -1,7 +1,20 @@
  'use strict';
- window.onload =   getQuestions('trivia',2); 
-  
-  
+
+
+(function() { // Begin scoping function
+   window.onload =   getQuestions('trivia',2); 
+   	  	let questions = JSON.parse(document.getElementById('triviaJSON').innerHTML);
+	   	let buttonString = "<article>";
+	  	let questionNext = 1;
+	  	let answerCount = 0;
+	  	//var h, p, i;
+	  	let selectedAnswer = "";
+	  	let score = 0;
+	  	let newScore = 0;
+		let aFact = "";
+	  	if (typeof answerCount === 'undefined') {
+	  	    answerCount = 0;
+	  	}
 	  	const classes = ["a", "b", "d", "e","f","g"];
 	  	if ("serviceWorker" in navigator) {
 	  	    navigator.serviceWorker.register("/sw.js", {
@@ -50,18 +63,6 @@
       };
   
 function getQuestions(quizType,nextSource) {	
-	   	let buttonString = "<article>";
-	  	let questionNext = 1;
-	  	let answerCount = 0;
-	  	//var h, p, i;
-	  	let questions = JSON.parse(document.getElementById('triviaJSON').innerHTML);
-	  	let selectedAnswer = "";
-	  	let score = 0;
-	  	let newScore = 0;
-		let aFact = "";
-	  	if (typeof answerCount === 'undefined') {
-	  	    answerCount = 0;
-	  	}
     let nextJson = quizType + nextSource  + ".json";
     fetch(nextJson)
     .then(function(response) {
@@ -86,12 +87,13 @@ Array.prototype.push.apply(questions, newQuestions)
   }
   
   function nextQuestion(questions,questionNext) {
-  let currentQuestion = document.querySelector('main');
+         let currentQuestion = document.querySelector('main');
   	     let question = questions[questionNext];
 		  if(question.fact) {
 		    let aFact = question.fact;
 			} else { aFact = "";
 			}
+
          let buttonString = "<section id='" + question.questionNumber + "'>" + "<h1>" + question.question + "<\/h1><div id='check'><\/div>";
 		 // buttonString = "<section id='" + question.questionNumber + "'>" + "<p>" + question.questionNumber + "</p>"+ "<h1>" + question.question + "<\/h1>";
         questionNext = question.next;
@@ -126,4 +128,6 @@ Array.prototype.push.apply(questions, newQuestions)
       }
     }
     
+	})();         // End scoping function
+
   
