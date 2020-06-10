@@ -1,6 +1,8 @@
     html {
       font-family: system-ui, sans-serif;
       font-size: 18px;
+	  color: #FFFFFF;
+	  background-color: #000000;
     }
 	#triviaJSON {
 		display: none;
@@ -11,24 +13,35 @@
     header h1 {
       font-family: system-ui, sans-serif;
       font-size: 3rem;
-      color: #8B138B;
+      color: #D9AAF3;
+	  color: #A617A6;
+	  color: #CA1CCA;
+	  background-color: #8B138B;
+	  background-color: #C4C4C4;
+	  	  background-color: #000000;
       margin: .5rem 0;
       letter-spacing: -3px;
+	  width: 18rem;
+	  padding: .2rem .3rem .3rem .3rem;
     }
     header h1 span {
       font-size: 2.3rem;
-      color: #000000;
+      color: #FFFFFF;
+	  background-color: #8B138B;
+	  background-color: #A617A6;
+	  background-color: #CA1CCA;
+	  padding: 0 .4rem 0 .3rem;
     }
 	header h1.slim {
-    font-family: system-ui, sans-serif;
-    font-size: 1.7rem;
-    color: #8B138B;
-    margin: .5rem 0;
-    letter-spacing: -2px;
+      font-family: system-ui, sans-serif;
+      font-size: 1.7rem;
+      color: #D9AAF3;
+      margin: .5rem 0;
+      letter-spacing: -2px;
 	}
 	 header h1.slim span {
       font-size: 1.3rem;
-      color: #000000;
+      color: #FFFFFF;
     }
     h1 {
       font-size: 1.1em;
@@ -57,7 +70,7 @@
       display: none;
     }
     button:focus, button:hover {
-      border: thin solid black;
+      border: thin solid #B7B7B7;
       outline: medium solid #FFFACD;
 	  box-shadow:0 0 10px 8px #FFFACD;
     }
@@ -92,7 +105,7 @@
 	  font-size: 1rem;
 	  font-weight: bold;
 	  float: right;
-	  border: thin black solid;
+	  border: thin #FFFFFF solid;
 	  padding: .5rem;
 	  display: inline;
 	  margin-left: 1rem;
@@ -132,6 +145,7 @@
         font-size: 2rem;
         margin: .5rem 0;
         letter-spacing: -2px;
+		width: 13rem;
       }
       header h1 span {
         font-size: 1.65rem;
