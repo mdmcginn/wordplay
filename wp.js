@@ -1,9 +1,9 @@
  'use strict';
 
-
-(function() { // Begin scoping function
-   window.onload =   getQuestions('trivia',2); 
+(function runit() { // Begin scoping function
+   window.onload =   getQuestions('trivia',0); 
    	  	let questions = JSON.parse(document.getElementById('triviaJSON').innerHTML);
+		let question;
 	   	let buttonString = "<article>";
 	  	let questionNext = 1;
 	  	let answerCount = 0;
@@ -58,6 +58,7 @@
             newScore = 0;
           }
 			document.getElementById("intro").innerHTML = aFact;
+					console.log(event.type);
 			nextQuestion(questionNext,aFact);  
         }
       };
@@ -86,9 +87,12 @@ Array.prototype.push.apply(questions, newQuestions)
     });
   }
   
-  function nextQuestion(questions,questionNext) {
+  function nextQuestion(questionNumber,questionNext) {
          let currentQuestion = document.querySelector('main');
-  	     let question = questions[questionNext];
+ //	     let question = questions[questionNext];
+		 questions.shift();
+		 let question = questions[0];
+	  console.log(questions.question);
 		  if(question.fact) {
 		    let aFact = question.fact;
 			} else { aFact = "";
@@ -98,7 +102,7 @@ Array.prototype.push.apply(questions, newQuestions)
 		 // buttonString = "<section id='" + question.questionNumber + "'>" + "<p>" + question.questionNumber + "</p>"+ "<h1>" + question.question + "<\/h1>";
         questionNext = question.next;
         let answers = [];
-	console.log(question);
+	console.log(question.choices);
         for (var i = question.choices.length - 1; i >= 0; i -= 1) {
            console.log(answers[i]);
 		   let answer;

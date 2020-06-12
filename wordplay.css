@@ -1,7 +1,7 @@
     html {
       font-family: system-ui, sans-serif;
       font-size: 18px;
-	  color: #FFFFFF;
+	  color: #FCFCFC;
 	  background-color: #000000;
     }
 	#triviaJSON {
@@ -13,11 +13,7 @@
     header h1 {
       font-family: system-ui, sans-serif;
       font-size: 3rem;
-      color: #D9AAF3;
-	  color: #A617A6;
-	  color: #ca1cca;
-	  background-color: #8B138B;
-	  background-color: #C4C4C4;
+	  color: ;
 	  background-color: #000000;
       margin: .5rem 0;
       letter-spacing: -3px;
@@ -26,22 +22,20 @@
     }
     header h1 span {
       font-size: 2.3rem;
-      color: #FFFFFF;
-	  background-color: #8B138B;
-	  background-color: #A617A6;
+      color: #FCFCFC;
 	  background-color: #CA1CCA;
 	  padding: 0 .4rem 0 .3rem;
     }
 	header h1.slim {
       font-family: system-ui, sans-serif;
       font-size: 1.7rem;
-      color: #D9AAF3;
+      color: #CA1CCA;
       margin: .5rem 0;
       letter-spacing: -2px;
 	}
 	 header h1.slim span {
       font-size: 1.3rem;
-      color: #FFFFFF;
+      color: #FCFCFC;
     }
     h1 {
       font-size: 1.1em;
@@ -60,9 +54,9 @@
     button#next {
       display: inline-block;
       margin-top: 1rem;
-      border: thick solid #8B138B;
-      color: #FFFFFF;
-      background-color: #8B138B;
+      border: thick solid #CA1CCA;
+      color: #FCFCFC;
+      background-color: #CA1CCA;
       font-weight: bold;
     }
     button#skip {
@@ -70,17 +64,17 @@
       display: none;
     }
     button:focus, button:hover {
-      border: thin solid #B7B7B7;
-      outline: medium solid #FFFACD;
-	  box-shadow:0 0 10px 8px #FFFACD;
+      border: thin solid #989898;
+      outline: thin solid #FFFACD;
+	  box-shadow:0 0 8px 4px #FFFACD;
     }
     button#next:focus, button#next:hover {
       outline: thin solid #FFFACD;
 	  box-shadow:0 0 7px 3px  #FFFACD;
     }
 	button.c:active{
-      outline: thin solid green;
-	  box-shadow:5px 5px 10px 2px green;
+      outline: thin solid #00BD00;
+	  box-shadow:2px 2px 8px 2px #00BD00;
     }
 	button.a:active,
 	button.b:active,
@@ -88,8 +82,8 @@
 	button.e:active,
 	button.f:active
 	{
-      outline: thin solid red;
-	  box-shadow:2px 2px 6px 1px red;
+      outline: thin solid #EB0000;
+	  box-shadow:2px 2px 6px 1px #EB0000;
     }
     p {
       margin: 0;
@@ -117,20 +111,20 @@
       display: block;
     }	
 	.c0 {
-	  color: red;
+	  color: #EB0000;
 	}
 	.c10 {
-	  color: green;
+	  color: #00BD00;
 	}
 	.c10 img {
 	max-width: 20%;
 	}
     footer a:link {
       text-decoration: none;
-      color: #550055;
+      color: #FCFCFC;
     }
     footer a:visited {
-      color: #6F096F;
+      color: #CA1CCA;
     }
     footer a:focus, footer a:hover {
       border-bottom: 1px solid;
