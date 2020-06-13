@@ -90,14 +90,14 @@ Array.prototype.push.apply(questions, newQuestions)
   function nextQuestion(questionNumber,questionNext) {
          let currentQuestion = document.querySelector('main');
  //	     let question = questions[questionNext];
-		 questions.shift();
-		 let question = questions[0];
+ questions.shift();
+		   	 let question = questions[0];
 	  console.log(questions.question);
-		  if(question.fact) {
+/*		  if(question.fact) {
 		    let aFact = question.fact;
 			} else { aFact = "";
 			}
-
+*/
          let buttonString = "<section id='" + question.questionNumber + "'>" + "<h1>" + question.question + "<\/h1><div id='check'><\/div>";
 		 // buttonString = "<section id='" + question.questionNumber + "'>" + "<p>" + question.questionNumber + "</p>"+ "<h1>" + question.question + "<\/h1>";
         questionNext = question.next;
@@ -123,13 +123,14 @@ Array.prototype.push.apply(questions, newQuestions)
 		let answerArray = [buttonString,question.next];
 		document.getElementById("main").innerHTML = buttonString;
 		        return answerArray;
-     for(let i = 0; i < questions.length; i++) {
+ /*    for(let i = 0; i < questions.length; i++) {
         const listItem = document.createElement('li');
         listItem.innerHTML = '<strong>' + questions[i].question + '</strong>';
         listItem.innerHTML +=' Number: ' + questions[i].questionNumber + '.';
         listItem.innerHTML +=' Next: <strong>' + questions[i].next + '</strong>';
         currentQuestion.appendChild(listItem);
       }
+	  */
     }
     
 	})();         // End scoping function
