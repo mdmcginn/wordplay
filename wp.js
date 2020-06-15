@@ -76,7 +76,7 @@ console.log(jsonObj.data[0][1]);
             newScore = 0;
           }
 			document.getElementById("intro").innerHTML = aFact;
-					console.log(event.type);
+//			console.log(event.type);
 			nextQuestion(questionNext,aFact);  
         }
       };
