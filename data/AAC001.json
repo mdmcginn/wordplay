@@ -1,0 +1,13 @@
+{
+  "fields": ["id", "question", "fact", "next", "choices1", "choices2", "choices3", "choices4"],
+  "data": [
+  ["AAC001-001","Who was Prime Minister of the United Kingdom during World War II?","0","AAC001-002","Winston Churchill","Margaret Thatcher","William Pitt","Tony Blair"  ],
+  ["AAC001-002","Which king was killed in 1066 at the Battle of Hastings ","0","AAC001-003","Harold","William","Henry","James"  ],
+  ["AAC001-003","Which king was killed at the Battle of Bosworth Field in 1485? ","0","AAC001-004","Richard III","Edward V","Henry VIII","James I"  ],
+  ["AAC001-004","In which year was Constantinople conquered by the Turks?","0","AAC001-005","1453","1792","1914","1286"  ],
+  ["AAC001-005","During the Spanish Civil War of 1936, Francisco Franco fought for which political faction?","0","AAC001-006","Nationalist Spain","Republican Spain","Popular Front","Papal State"  ],
+  ["AAC001-006","By passing the 1933 Enabling Act, the German Reichstag gave dictatorial powers to","0","AAC001-007","Adolph Hitler","Alger Hiss","Paul von Hindenburg","Otto von Bismarck"  ],
+  ["AAC001-007","During the Spanish Civil War, which political faction was supported by Hitler and Mussolini?","0","AAC001-008","Fascists","Republicans","Popular Front","Papal State"  ],
+  ["AAC001-008","On what day did World War I end?","0","AAG001-001","November 11, 1918","March 7, 1914","July 12, 1941","October 10, 1939"  ]
+]
+}

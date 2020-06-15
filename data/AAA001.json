@@ -1,0 +1,12 @@
+{
+  "fields": ["id", "question", "fact", "next", "choices1", "choices2", "choices3", "choices4"],
+  "data": [
+  ["AAA001-001","When was the fax machine invented?","Alexander Bain, between 1843 and 1846, used a clock to synchronize two pendulums to scan a message line by line.","AAA001-002","1843","1924","1964","1948"  ],
+  ["AAA001-002","Comedian Bob Hope was born in","0","AAA001-003","London","Cleveland","Palm Springs","New York"  ],
+  ["AAA001-003","Songwriter Irving Berlin, composer of 'God Bless America,' was born in ","0","AAA001-004","Siberia","New York","Berlin","Milwaukee"  ],
+  ["AAA001-004","Johnny Weissmuller, best known for his Tarzan movies, was born in","0","AAA001-005","Hungary","Illinois","California","New York"  ],
+  ["AAA001-005","Joel McGinnis was born in","0","AAA001-006","Texas","Illinois","Wisconsin","Alaska"  ],
+  ["AAA001-006","Babe Ruth hit 714 home runs in his career. How many times did he strike out?","0","AAA001-007","1330","286","521","715"  ],
+  ["AAA001-007","Where was French artist Paul Gauguin buried? ","0","AAA008-008","Marquesas Islands ","Channel Islands","Île de la Cité, France","Grosse Ile, Michigan"  ]
+]
+}

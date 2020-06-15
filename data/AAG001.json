@@ -1,0 +1,9 @@
+{
+  "fields": ["id", "question", "fact", "next", "choices1", "choices2", "choices3", "choices4"],
+  "data": [
+  ["AAG001-001","Which of these pieces of artwork was created in the Renaissance?","Sandro Botticelli, Young Woman (Simonetta Vespucci?) in Mythological Guise, c. 1480-1485, tempera on panel, Städelsches Kunstinstitut, Frankfurt am Main","AAG001-002","<img src='img/botticelli.jpg'>","<img  src='img/lindisfarne.jpg'>","<img src='img/courtly.jpg'>","<img src='img/monreale.jpg'>"  ],
+  ["AAG001-002","In the book of Ruth, what was Ruth's nationality?","0","AAG001-003","Moabite","Judean","Israelite","Canaanite"  ],
+  ["AAG001-003","Who was King David's general and nephew?","0","AAG001-004","Joab","Abishag","Bildad","Nabal"  ],
+  ["AAG001-004","Who was the prophet Elijah's successor?","0","0","Elisha","Ahab","Malachi","John the Baptist"  ]
+]
+}

@@ -1,0 +1,12 @@
+{
+  "fields": ["id", "question", "fact", "next", "choices1", "choices2", "choices3", "choices4"],
+  "data": [
+  ["AAA008-008","What was the birthplace of Eamon de Valera, the first president of the Irish Republic?","0","AAA008-009","New York City","Dublin","Barcelona","Belfast"  ],
+  ["AAA008-009","What was the birthplace of Mustafa Kemal Ataturk, the father of modern Turkey?","0","AAA008-010","Greece","Turkey","Uzbekistan","Persia"  ],
+  ["AAA008-010","What was the birthplace of Catherine the Great, the Empress of Russia?","0","AAA008-011","Poland","Russia","Ukraine","Bosnia"  ],
+  ["AAA008-011","What was the birthplace of Marie Antoinette, the last Queen of France?","0","AAA008-012","Austria","France","Switzerland","Belgium"  ],
+  ["AAA008-012","What was the birthplace of Adolf Hitler, the Nazi dictator of Germany?","0","AAA008-013","Austria","Switzerland","Germany","Serbia"  ],
+  ["AAA008-013","Who copied these sentences into his Latin exercise book as a boy: 'No man understands me... What will become of me.... I know not what to do.'?","0","AAA008-014","Isaac Newton","George III","Lord Chesterfield","Jean-Jacques Rousseau"  ],
+  ["AAA008-014","Isaac Newton's mother expected him to become a","0","AAB001-001","sheep farmer","alchemist","engraver","theologian"  ]
+]
+}

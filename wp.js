@@ -1,8 +1,26 @@
- 'use strict';
+"use strict";
 
 (function runit() { // Begin scoping function
-   window.onload =   getQuestions('trivia',0); 
-   	  	let questions = JSON.parse(document.getElementById('triviaJSON').innerHTML);
+   window.onload =   getQuestions('AAA','001'); 
+   let jsonObj = JSON.parse(document.getElementById('triviaJSON').innerHTML);
+/*   let s = document.getElementById('triviaJSON').innerHTML;
+   s = s.replace(/\\n/g, "\\n")  
+               .replace(/\\'/g, "\\'")
+               .replace(/\\"/g, '\\"')
+               .replace(/\\&/g, "\\&")
+               .replace(/\\r/g, "\\r")
+               .replace(/\\t/g, "\\t")
+               .replace(/\\b/g, "\\b")
+               .replace(/\\f/g, "\\f");
+// remove non-printable and other non-valid JSON chars
+s = s.replace(/[\u0000-\u0019]+/g,""); 
+console.log(s);
+var jsonObj = JSON.parse(s);
+*/
+console.log(jsonObj);
+console.log(jsonObj.data[0][1]);
+ // 	  	let jsonObj = JSON.parse(document.getElementById('triviaJSON').innerHTML);
+		let questions = jsonObj;
 		let question;
 	   	let buttonString = "<article>";
 	  	let questionNext = 1;
@@ -46,10 +64,10 @@
   
     document.onclick = function(event) {
         const target = event.target || event.srcElement;
-		console.log(event.composedPath());
-		console.log(event.composedPath()[1].className);
-		console.log(event.type);
-		console.log(event.target.classList);	
+//		console.log(event.composedPath());
+//		console.log(event.composedPath()[1].className);
+//		console.log(event.type);
+//		console.log(event.target.classList);	
         if (event.target.nodeName === "BUTTON" || event.target.nodeName === "IMG" ) {
           answerCount++;
           if (event.target.className === "c" || event.composedPath()[1].className === "c") {
@@ -64,7 +82,8 @@
       };
   
 function getQuestions(quizType,nextSource) {	
-    let nextJson = quizType + nextSource  + ".json";
+    let nextJson = "data/" + quizType + nextSource  + ".json";
+	console.log(nextJson);
     fetch(nextJson)
     .then(function(response) {
       if (!response.ok) {
@@ -74,44 +93,48 @@ function getQuestions(quizType,nextSource) {
     })
     .then(function(newQuestions) {
 //questions.push(newQuestions);
+	  questions = questions.data;
+	  newQuestions = newQuestions.data;
 Array.prototype.push.apply(questions, newQuestions)
 	  console.log(questions);
 	  nextQuestion(questions,questionNext)
     })
     .catch(function(error) {
-      const p = document.createElement('p');
-      p.appendChild(
-        document.createTextNode('Error: ' + error.message)
-      );
-	  console.log(error.message);
+ //     const p = document.createElement('p');
+ //       p.appendChild(
+ //       document.createTextNode('Error: ' + error.message)
+// 	  console.log(error.message);
+ //     );
+
     });
   }
   
-  function nextQuestion(questionNumber,questionNext) {
+  function nextQuestion(id,questionNext) {
          let currentQuestion = document.querySelector('main');
  //	     let question = questions[questionNext];
- questions.shift();
+ 	  console.log(questions);
+ (questions).shift();
 		   	 let question = questions[0];
-	  console.log(questions.question);
+	  console.log(question);
 /*		  if(question.fact) {
 		    let aFact = question.fact;
 			} else { aFact = "";
 			}
 */
-         let buttonString = "<section id='" + question.questionNumber + "'>" + "<h1>" + question.question + "<\/h1><div id='check'><\/div>";
-		 // buttonString = "<section id='" + question.questionNumber + "'>" + "<p>" + question.questionNumber + "</p>"+ "<h1>" + question.question + "<\/h1>";
-        questionNext = question.next;
+         let buttonString = "<section id='" + question[0] + "'>" + "<h1>" + question[1] + "<\/h1><div id='check'><\/div>";
+		 // buttonString = "<section id='" + question.id + "'>" + "<p>" + question.id + "</p>"+ "<h1>" + question.question + "<\/h1>";
+        questionNext = question[3];
         let answers = [];
 	console.log(question.choices);
-        for (var i = question.choices.length - 1; i >= 0; i -= 1) {
+        for (var i = question.length - 1; i >= 4; i -= 1) {
            console.log(answers[i]);
 		   let answer;
-          if (i === 0) {
-           answer = "<button class='c' type='button'>" + question.choices[i] + "<\/button>";
-			let checkAnswer = question.choices[i];
-			let checkQuestion = question.question;
+          if (i === 4) {
+           answer = "<button class='c' type='button'>" + question[i] + "<\/button>";
+			let checkAnswer = question[i];
+			let checkQuestion = question[1];
           } else {
-            answer = "<button class='" + classes[i] + "' type='button'>" + question.choices[i] + "<\/button>";
+            answer = "<button class='" + classes[i-3] + "' type='button'>" + question[i] + "<\/button>";
           }
           answers.push(answer);
         }
@@ -126,7 +149,7 @@ Array.prototype.push.apply(questions, newQuestions)
  /*    for(let i = 0; i < questions.length; i++) {
         const listItem = document.createElement('li');
         listItem.innerHTML = '<strong>' + questions[i].question + '</strong>';
-        listItem.innerHTML +=' Number: ' + questions[i].questionNumber + '.';
+        listItem.innerHTML +=' Number: ' + questions[i].id + '.';
         listItem.innerHTML +=' Next: <strong>' + questions[i].next + '</strong>';
         currentQuestion.appendChild(listItem);
       }

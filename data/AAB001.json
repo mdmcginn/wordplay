@@ -1,0 +1,12 @@
+{
+  "fields": ["id", "question", "fact", "next", "choices1", "choices2", "choices3", "choices4"],
+  "data": [
+  ["AAB001-001","When was the United States Declaration of Independence signed?","The first battle of the American Revolution began on April 18, 1775.","AAB001-002","1776","1774","1777","1775"  ],
+  ["AAB001-002","Which building was set afire on August 24, 1812?","During the War of 1812, invading British troops set fire to the President's House, the U.S. Capitol, and other Washington DC landmarks.","AAB001-003","The White House","Parliament Building","the Reichstag","Palace of the Nation"  ],
+  ["AAB001-003","Where is Grant's Tomb?","0","AAB001-004","New York City","Savannah","St. Louis","Paducah"  ],
+  ["AAB001-004","In the year 1900, what were the most popular baby names in the United States?","0","AAB001-005","John and Mary","Joseph and Catherine","William and Elizabeth","George and Anne"  ],
+  ["AAB001-005","On what day did the United States declare war on Japan, entering World War II?","0","AAB001-006","December 8, 1941","June 6, 1944","June 22, 1941","September 1, 1939"  ],
+  ["AAB001-006","Patrick Henry's 1775 speech 'Give me liberty or give me death' urged Virginians to","0","AAB001-007","join the American Revolution","confirm their loyalty to King George III","send money to French orphans","stand up for the rights of Native Americans"  ],
+  ["AAB001-007","Which American general was killed in the 1775 Battle of Quebec? ","American General Benedict Arnold was wounded. The invasion of Canada proved to be the first major defeat of the Revolutionary War.","AAC001-001","Richard Montgomery","Lord Montcalm","Henri de Guise","Louis Riel"  ]
+]
+}
